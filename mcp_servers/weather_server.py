@@ -9,8 +9,8 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("WeatherServer")
  
 # OpenWeather API 配置
-# 显式加载同目录下的 .env
-load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
+# 加载项目根目录的 .env 文件
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
 OPENWEATHER_API_BASE = "https://api.openweathermap.org/data/2.5/weather"
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 USER_AGENT = "weather-app/1.0"

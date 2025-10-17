@@ -1,8 +1,20 @@
 {
-    "mcpServers": {
-      "weather": {
-        "command": "python",
-        "args": ["weather_server.py"]
-      }
+  "mcpServers": {
+    "weather": {
+      "command": "python",
+      "args": ["mcp_servers/weather_server.py"]
+    },
+    "systeminfo": {
+      "command": "python",
+      "args": ["mcp_servers/getSysInfo_server.py"]
+    },
+    "iplocation": {
+      "command": "python",
+      "args": ["mcp_servers/ip_location_server.py"]
+    },
+    "getDomainInfo_server": {
+      "command": "python",
+      "args": ["mcp_servers/getDomainInfo_server.py"]
     }
   }
+}
